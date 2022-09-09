@@ -126,7 +126,7 @@
             this.pnlDesktop.Location = new System.Drawing.Point(0, 35);
             this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(784, 263);
+            this.pnlDesktop.Size = new System.Drawing.Size(784, 247);
             this.pnlDesktop.TabIndex = 1;
             // 
             // pnlDownloadList
@@ -134,9 +134,9 @@
             this.pnlDownloadList.AutoScroll = true;
             this.pnlDownloadList.Controls.Add(this.pnlCurrentItem);
             this.pnlDownloadList.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDownloadList.Location = new System.Drawing.Point(0, 55);
+            this.pnlDownloadList.Location = new System.Drawing.Point(0, 58);
             this.pnlDownloadList.Name = "pnlDownloadList";
-            this.pnlDownloadList.Size = new System.Drawing.Size(784, 208);
+            this.pnlDownloadList.Size = new System.Drawing.Size(784, 189);
             this.pnlDownloadList.TabIndex = 1;
             // 
             // pnlCurrentItem
@@ -154,7 +154,7 @@
             this.pnlCurrentItem.Location = new System.Drawing.Point(12, 12);
             this.pnlCurrentItem.Name = "pnlCurrentItem";
             this.pnlCurrentItem.Padding = new System.Windows.Forms.Padding(10, 90, 0, 0);
-            this.pnlCurrentItem.Size = new System.Drawing.Size(760, 184);
+            this.pnlCurrentItem.Size = new System.Drawing.Size(760, 166);
             this.pnlCurrentItem.TabIndex = 0;
             // 
             // lblFileSizeDownSize
@@ -164,7 +164,7 @@
             this.lblFileSizeDownSize.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblFileSizeDownSize.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblFileSizeDownSize.ForeColor = System.Drawing.Color.White;
-            this.lblFileSizeDownSize.Location = new System.Drawing.Point(9, 158);
+            this.lblFileSizeDownSize.Location = new System.Drawing.Point(13, 142);
             this.lblFileSizeDownSize.Name = "lblFileSizeDownSize";
             this.lblFileSizeDownSize.Size = new System.Drawing.Size(103, 15);
             this.lblFileSizeDownSize.TabIndex = 26;
@@ -177,7 +177,7 @@
             this.lblLeftTime.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lblLeftTime.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblLeftTime.ForeColor = System.Drawing.Color.White;
-            this.lblLeftTime.Location = new System.Drawing.Point(499, 158);
+            this.lblLeftTime.Location = new System.Drawing.Point(517, 142);
             this.lblLeftTime.Name = "lblLeftTime";
             this.lblLeftTime.Size = new System.Drawing.Size(129, 15);
             this.lblLeftTime.TabIndex = 25;
@@ -190,7 +190,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(278, 138);
+            this.label9.Location = new System.Drawing.Point(253, 142);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(82, 15);
             this.label9.TabIndex = 24;
@@ -328,7 +328,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 298);
+            this.ClientSize = new System.Drawing.Size(784, 282);
             this.ControlBox = false;
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlTitleBar);
