@@ -68,6 +68,7 @@
             this.pnlTitleBar.Name = "pnlTitleBar";
             this.pnlTitleBar.Size = new System.Drawing.Size(784, 35);
             this.pnlTitleBar.TabIndex = 0;
+            this.pnlTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTitleBar_Paint);
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitleBar_MouseDown);
             // 
             // lblPageTitle

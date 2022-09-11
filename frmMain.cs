@@ -85,6 +85,7 @@ namespace SIDM
                 webRequest.Credentials = CredentialCache.DefaultCredentials;
                 webResponse = (HttpWebResponse)webRequest.GetResponse();
                 length = webResponse.ContentLength;
+                string type = webResponse.ContentType;
                 fileSizeMB = ((length / 1024) / 1024);
                 lblFileSizeDownSize.Text = "0 MB of " + fileSizeMB.ToString("F2") + " MB (Est.)";
                 webResponse.Close();
@@ -109,10 +110,6 @@ namespace SIDM
 
 
                 }
-                //obj[numConnection - 1] = new object[] { length / numConnection * (numConnection - 1), length - 1, 7 }; //label no 9
-                //task[numConnection - 1] = new Task<byte[]>(download, obj[numConnection - 1]);
-                //task[numConnection - 1].Start();
-
                 Task t1 = new Task(() =>
                 {
                     Task.WaitAll(task);
@@ -247,13 +244,7 @@ namespace SIDM
                 pnlCurrentItem.Controls.Add(progressBar[i]);
                 size += 93;
             }
-            //progressBar[9] = new ProgressBar();
-            //this.progressBar[9].Location = new Point(9, 12);
-            //this.progressBar[9].Name = "progressBar9";
-            //this.progressBar[9].Size = new Size(742, 23);
-            //pnlCurrentItem.Controls.Add(progressBar[9]);
-
-            // pnlCurrentItem.Controls.OfType<Label>().Except(new[] { lblFileSizeDownSize, label9, lblLeftTime }).ToList().ForEach(c => c.Dispose());
+            
             bool isTop = true;
             size = 9;
             for (int i = 0; i < numConnection; i++)
@@ -289,6 +280,11 @@ namespace SIDM
                     txtDiskPath.Text = fbd.SelectedPath;
                 }
             }
+        }
+
+        private void pnlTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
